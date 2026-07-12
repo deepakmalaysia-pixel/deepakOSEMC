@@ -1,2 +1,2 @@
 # deepakOSEMC
-This repository describes the steps to be taken by the Energy Management Council of Oberoi Splendor, Mumbai
+This repository contains the action plan and the steps for obtaining optimum energy efficiency  of our  complex and safety of residents against prevention of electrical fires through regular reviews by experts

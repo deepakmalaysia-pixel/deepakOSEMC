@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housing Complex Energy Optimisation Plan</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>⚡ Energy Optimisation Action Plan</h1>
+    <p class="subtitle">Sequential workflow guidelines for the Housing Complex compliance roadmap.</p>
+
+    <!-- Graphic Layout + Controls Wrapper -->
+    <div class="graphic-container">
+      <div class="graphic-wrapper">
+        <svg id="energyWorkflowVisual" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380">
+          <defs>
+            <linearGradient id="energyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f59e0b" />
+              <stop offset="50%" stop-color="#0ea5e9" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.12" />
+            </filter>
+            <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#94a3b8" />
+            </marker>
+          </defs>
+
+              <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
+                fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.45" transform="translate(6,22)" />
+              <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
+                fill="none" stroke="#f59e0b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,12)" />
+
+              <g transform="translate(300,228)">
+                <g id="step1" class="node">
+                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+                  <circle cx="0" cy="0" r="36" fill="#2563eb" />
+                  <text y="2" class="text-num">01</text>
+                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+                  <text y="106" class="text-label">Contractor Selection</text>
+                </g>
+          </g>
+
+              <g transform="translate(580,228)">
+                <g id="step2" class="node">
+                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+                  <circle cx="0" cy="0" r="36" fill="#0ea5e9" />
+                  <text y="2" class="text-num">02</text>
+                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+                  <text y="106" class="text-label">Terms of Reference</text>
+                </g>
+          </g>
+
+              <g transform="translate(848,228)">
+                <g id="step3" class="node">
+                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+                  <circle cx="0" cy="0" r="36" fill="#10b981" />
+                  <text y="2" class="text-num">03</text>
+                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+                  <text y="106" class="text-label">Tender Issuance</text>
+                </g>
+          </g>
+        </svg>
+      </div>
+      <div class="graphic-controls">
+        <button id="replayBtn" class="btn-replay">🔄 Replay Sequence</button>
+      </div>
+    </div>
+
+    <!-- Directory Content Elements -->
+    <div class="directory">
+      <div class="step-card">
+        <div class="step-title">01. Contractor Selection</div>
+        <div class="step-scope">Selection of a licensed contractor approved by the Bureau of Energy Efficiency (BEE) and compliant with the local regulations of the Maharashtra Government to carry out the core Energy Audit.</div>
+        <ul class="resource-links">
+          <li><a href="https://beeindia.gov.in" target="_blank">🌐 BEE Directory</a></li>
+          <li><a href="https://maharashtra.gov.in" target="_blank">🌐 MEDA Guidelines</a></li>
+          <li><a href="./docs/mh-compliance.md" class="compliance-link">📄 Local Regulations Checklist</a></li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-title">02. Terms of Reference</div>
+        <div class="step-scope">Finalisation of the formal Terms of Reference (ToR) detailing the physical, technological, and computational boundaries of the upcoming energy audit.</div>
+        <ul class="resource-links">
+          <li><a href="./templates/tor-template.md">📥 Download ToR Template</a></li>
+          <li><a href="./maps/electrical-sld.md">🗺️ Electrical Single Line Diagram</a></li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-title">03. Tender Development & Issuance</div>
+        <div class="step-scope">Shortlisting of potential contractors or agencies after evaluating their corporate profile, financial capability, and past execution data. Followed by developing and deploying a comprehensive tender document to invite competitive bids from the shortlisted entities.</div>
+        <ul class="resource-links">
+          <li><a href="./sheets/evaluation-matrix.html">📊 Financial Matrix Sheet</a></li>
+          <li><a href="./docs/draft-tender.md">📄 Draft Tender Document</a></li>
+          <li><a href="https://example.com" target="_blank">🔗 Submission Portal</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
