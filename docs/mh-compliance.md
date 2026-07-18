@@ -1,3 +1,5 @@
+<div style="font-size: 22px; line-height: 1.6;">
+
 # Maharashtra Local Regulations Checklist
 
 Use this checklist before finalizing the energy audit scope and tender package.
@@ -28,3 +30,5 @@ Use this checklist before finalizing the energy audit scope and tender package.
 ## Recommended References
 - Maharashtra Government Portal: https://maharashtra.gov.in
 - Bureau of Energy Efficiency (BEE): https://beeindia.gov.in
+
+</div>

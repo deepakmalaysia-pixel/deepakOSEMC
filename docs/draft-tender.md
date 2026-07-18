@@ -1,3 +1,5 @@
+<div style="font-size: 22px; line-height: 1.6;">
+
 # Draft Tender Document
 
 ## 1. Tender Overview
@@ -48,3 +50,5 @@
 - Designation:
 - Email:
 - Phone:
+
+</div>
