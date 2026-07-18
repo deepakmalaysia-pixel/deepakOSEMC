@@ -11,5 +11,6 @@ Repository layout:
 - Root: site shell files only (`index.html`, `styles.css`, `script.js`, `README.md`).
 - `docs/`: tender and compliance documents.
 - `maps/`: SLD and diagram references.
+- `presentations/`: presentation files for review and download.
 - `sheets/`: evaluation and savings tracker files.
 - `templates/`: reusable document templates.

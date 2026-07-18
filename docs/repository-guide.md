@@ -27,6 +27,8 @@ deepakOSEMC/
 │   └── repository-guide.md
 ├── maps/
 │   └── electrical-sld.md
+├── presentations/
+│   └── Electrical Preventive Maintenance Program.pptx
 ├── sheets/
 │   ├── EMC_Savings_Tracker.csv
 │   ├── evaluation-matrix.csv
@@ -85,6 +87,14 @@ This folder stores diagram-related files or placeholders.
 
 Use this folder for electrical layouts, diagrams, or map-style references.
 
+### presentations/
+
+This folder stores PowerPoint or slide-based presentation material.
+
+- `Electrical Preventive Maintenance Program.pptx`: Presentation deck for review and discussion.
+
+Use this folder for downloadable presentation files.
+
 ### sheets/
 
 This folder stores spreadsheets, calculations, and sheet-like data.
@@ -131,6 +141,7 @@ To keep the repository neat, use this rule:
 - Keep website engine files in the root folder.
 - Keep written documents in `docs/`.
 - Keep diagrams in `maps/`.
+- Keep presentation decks in `presentations/`.
 - Keep tables and spreadsheet-style files in `sheets/`.
 - Keep reusable formats in `templates/`.
 
@@ -141,6 +152,7 @@ If you forget everything else, remember this:
 - `index.html` is the main page.
 - `docs/` is for documents.
 - `maps/` is for diagram references.
+- `presentations/` is for PowerPoint or slide decks.
 - `sheets/` is for tables and trackers.
 - `templates/` is for reusable formats.
 

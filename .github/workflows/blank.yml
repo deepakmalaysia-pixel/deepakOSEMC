@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html styles.css script.js _site/
-          cp -R docs maps sheets templates _site/
+          cp -R docs maps presentations sheets templates _site/
 
       - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
