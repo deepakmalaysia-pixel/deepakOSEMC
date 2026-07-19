@@ -7,6 +7,7 @@ Repository: https://github.com/deepakmalaysia-pixel/deepakOSEMC
 Beginner guide:
 - Repository guide: [docs/repository-guide.md](docs/repository-guide.md)
 - Publishing SOP: [docs/publishing-sop.md](docs/publishing-sop.md)
+- Complete development guide: [docs/development-guide.md](docs/development-guide.md)
 
 Repository layout:
 - Root: site shell files only (`index.html`, `styles.css`, `script.js`, `README.md`).
