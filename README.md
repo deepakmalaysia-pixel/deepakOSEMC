@@ -9,3 +9,11 @@ It is open for anyone visiting the repository who is interested in optimizing en
 - Evaluate each proposal based on technical expertise, previous project experience, approach, timelines, and commercial terms.
 - Shortlist suitable candidates and conduct discussions or presentations to assess their understanding of the project requirements.
 - Finalize the consultant based on competence, compliance, value for money, and suitability for the council's objectives.
+
+## Proposed Energy Conservation Makeover
+
+- Upgrade common-area lighting to energy-efficient LED fixtures with suitable illumination levels.
+- Install motion sensors and timer-based controls in corridors, staircases, parking areas, and other intermittently used spaces.
+- Review pump, motor, and ventilation loads to identify opportunities for higher-efficiency equipment and optimized operating schedules.
+- Improve electrical load monitoring to track consumption patterns and identify avoidable wastage across the residential complex.
+- Evaluate the feasibility of solar power integration and other sustainable measures to reduce long-term grid electricity dependence.
