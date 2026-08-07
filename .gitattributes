@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
+﻿# Normalize text files consistently across operating systems
 * text=auto
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.zip binary

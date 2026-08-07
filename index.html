@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self' data: https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>Housing Complex Energy Optimisation Plan</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -30,39 +33,65 @@
             </marker>
           </defs>
 
-              <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
-                fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.45" transform="translate(6,22)" />
-              <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
-                fill="none" stroke="#f59e0b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,12)" />
+          <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
+            fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.45" transform="translate(6,22)" />
+          <path d="M90,220 C130,145 190,145 230,220 C270,295 330,295 370,220 C410,145 470,145 510,220 C550,295 610,295 650,220 C690,145 750,145 790,220 C830,295 870,295 910,220"
+            fill="none" stroke="#f59e0b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,12)" />
 
-              <g transform="translate(300,228)">
-                <g id="step1" class="node">
-                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
-                  <circle cx="0" cy="0" r="36" fill="#2563eb" />
-                  <text y="2" class="text-num">01</text>
-                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
-                  <text y="106" class="text-label">Contractor Selection</text>
-                </g>
+          <g transform="translate(300,228)">
+            <g id="step1" class="node">
+              <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+              <circle cx="0" cy="0" r="36" fill="#2563eb" />
+              <text y="2" class="text-num">01</text>
+              <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+              <text y="106" class="text-label">Contractor Selection</text>
+            </g>
           </g>
 
-              <g transform="translate(580,228)">
-                <g id="step2" class="node">
-                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
-                  <circle cx="0" cy="0" r="36" fill="#0ea5e9" />
-                  <text y="2" class="text-num">02</text>
-                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
-                  <text y="106" class="text-label">Terms of Reference</text>
-                </g>
+          <g transform="translate(580,228)">
+            <g id="step2" class="node">
+              <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+              <circle cx="0" cy="0" r="36" fill="#0ea5e9" />
+              <text y="2" class="text-num">02</text>
+              <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+              <text y="106" class="text-label">Terms of Reference</text>
+            </g>
           </g>
 
-              <g transform="translate(848,228)">
-                <g id="step3" class="node">
-                  <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
-                  <circle cx="0" cy="0" r="36" fill="#10b981" />
-                  <text y="2" class="text-num">03</text>
-                  <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
-                  <text y="106" class="text-label">Tender Issuance</text>
-                </g>
+          <g transform="translate(848,228)">
+            <g id="step3" class="node">
+              <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+              <circle cx="0" cy="0" r="36" fill="#10b981" />
+              <text y="2" class="text-num">03</text>
+              <line class="desc-arrow" x1="0" y1="52" x2="0" y2="84" />
+              <text y="106" class="text-label">Tender Issuance</text>
+            </g>
+          </g>
+
+          <g transform="translate(442,236)">
+            <g id="step4" class="node">
+              <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+              <circle cx="0" cy="0" r="36" fill="#8b5cf6" />
+              <text y="2" class="text-num">04</text>
+              <line class="desc-arrow" x1="0" y1="-52" x2="0" y2="-98" />
+              <text y="-116" class="text-label text-label-small">
+                <tspan x="0" dy="0">Immediate Actions</tspan>
+                <tspan x="0" dy="14">for Lobby Lighting</tspan>
+              </text>
+            </g>
+          </g>
+
+          <g transform="translate(720,236)">
+            <g id="step5" class="node">
+              <circle cx="0" cy="0" r="48" fill="#ffffff" filter="url(#shadow)" />
+              <circle cx="0" cy="0" r="36" fill="#ef4444" />
+              <text y="2" class="text-num">05</text>
+              <line class="desc-arrow" x1="0" y1="-52" x2="0" y2="-98" />
+              <text y="-116" class="text-label text-label-small">
+                <tspan x="0" dy="0">Assessment of Overall Safety</tspan>
+                <tspan x="0" dy="14">of Entire Distribution Network</tspan>
+              </text>
+            </g>
           </g>
         </svg>
       </div>
@@ -75,11 +104,13 @@
     <div class="directory">
       <div class="step-card">
         <div class="step-title">01. Contractor Selection</div>
-        <div class="step-scope">Selection of a licensed contractor approved by the Bureau of Energy Efficiency (BEE) and compliant with the local regulations of the Maharashtra Government to carry out the core Energy Audit.</div>
+        <div class="step-scope">Selection of a licensed contractor approved by the Bureau of Energy Efficiency (BEE) and compliant with the local regulations of the Maharashtra Government to carry out a detailed energy audit, recommend efficiency measures, and support implementation planning.</div>
         <ul class="resource-links">
-          <li><a href="https://beeindia.gov.in" target="_blank">🌐 BEE Directory</a></li>
-          <li><a href="https://maharashtra.gov.in" target="_blank">🌐 MEDA Guidelines</a></li>
+          <li><a href="https://beeindia.gov.in" target="_blank" rel="noopener noreferrer">🌐 BEE Directory</a></li>
+          <li><a href="https://maharashtra.gov.in" target="_blank" rel="noopener noreferrer">🌐 MEDA Guidelines</a></li>
           <li><a href="./docs/mh-compliance.md" class="compliance-link">📄 Local Regulations Checklist</a></li>
+          <li><a href="./docs/repository-guide.md">📘 Repository Guide For Beginners</a></li>
+          <li><a href="./docs/publishing-sop.md">🧭 Publishing SOP</a></li>
         </ul>
       </div>
 
@@ -93,12 +124,22 @@
       </div>
 
       <div class="step-card">
-        <div class="step-title">03. Tender Development & Issuance</div>
-        <div class="step-scope">Shortlisting of potential contractors or agencies after evaluating their corporate profile, financial capability, and past execution data. Followed by developing and deploying a comprehensive tender document to invite competitive bids from the shortlisted entities.</div>
+        <div class="step-title">03. Tender Development &amp; Issuance</div>
+        <div class="step-scope">Shortlisting of potential contractors or agencies after evaluating their corporate profile, financial capability, and past execution data. This is followed by developing and issuing a transparent tender document aligned with ToR requirements and governance expectations.</div>
         <ul class="resource-links">
           <li><a href="./sheets/evaluation-matrix.html">📊 Financial Matrix Sheet</a></li>
+          <li><a href="./sheets/EMC_Savings_Tracker.csv">📈 EMC Savings Tracker</a></li>
           <li><a href="./docs/draft-tender.md">📄 Draft Tender Document</a></li>
-          <li><a href="https://example.com" target="_blank">🔗 Submission Portal</a></li>
+          <li><a href="https://github.com/deepakmalaysia-pixel/deepakOSEMC" target="_blank" rel="noopener noreferrer">🔗 Tender Repository</a></li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-title">04. Preventive Maintenance</div>
+        <div class="step-scope">Preventive Maintenance of the Electrical Assets and installation as per a well laid down SOP and review of existing maintenance practices.</div>
+        <ul class="resource-links">
+          <li><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fdeepakmalaysia-pixel%2FdeepakOSEMC%2Fmain%2Fpresentations%2FElectrical%2520Preventive%2520Maintenance%2520Program.pptx" target="_blank" rel="noopener noreferrer">📽️ Electrical Preventive Maintenance Program (Preview)</a></li>
+          <li><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fdeepakmalaysia-pixel%2FdeepakOSEMC%2Fmain%2Fpresentations%2FPreventive%2520Maintenance%2520Schedule%2520of%2520Electrical%2520Installation.docx" target="_blank" rel="noopener noreferrer">📄 Draft Preventive Maintenance Schedule for Electrical Installation (Preview)</a></li>
         </ul>
       </div>
     </div>
