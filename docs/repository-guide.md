@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# Repository Guide For Beginners
+=======
+# Repository Guide For Beginners
+>>>>>>> 7bf7e7da90b6916cb4095ca675de4f3bae251758
 
 This document explains the folders and files in this repository in simple language.
 
@@ -156,4 +160,8 @@ If you forget everything else, remember this:
 - `sheets/` is for tables and trackers.
 - `templates/` is for reusable formats.
 
+<<<<<<< HEAD
 That is the complete working structure of this repository.
+=======
+That is the complete working structure of this repository.
+>>>>>>> 7bf7e7da90b6916cb4095ca675de4f3bae251758
