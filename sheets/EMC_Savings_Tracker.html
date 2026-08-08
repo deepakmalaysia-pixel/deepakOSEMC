@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMC Savings Tracker</title>
+  <style>
+    :root {
+      --bg-main: #eef6ff;
+      --card-bg: #ffffff;
+      --header-bg: #0f766e;
+      --header-text: #ffffff;
+      --row-odd: #f0fdfa;
+      --row-even: #ecfeff;
+      --row-hover: #ccfbf1;
+      --text-main: #1f2937;
+      --border: #99f6e4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(145deg, var(--bg-main), #f8fafc);
+      color: var(--text-main);
+      padding: 1.5rem;
+    }
+
+    .sheet {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 14px 30px rgba(15, 118, 110, 0.12);
+      overflow: hidden;
+    }
+
+    .sheet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: linear-gradient(90deg, #0f766e, #14b8a6);
+      color: var(--header-text);
+      padding: 1rem 1.25rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .sheet-header a {
+      color: #ecfeff;
+      text-decoration: none;
+      border: 1px solid rgba(236, 254, 255, 0.5);
+      border-radius: 8px;
+      padding: 0.45rem 0.7rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .sheet-header a:hover {
+      background: rgba(236, 254, 255, 0.16);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1100px;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.8rem;
+      text-align: left;
+      font-size: 0.92rem;
+      white-space: nowrap;
+    }
+
+    th {
+      background: var(--header-bg);
+      color: var(--header-text);
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: var(--row-odd);
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--row-even);
+    }
+
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+
+    .note {
+      padding: 0.9rem 1.25rem 1.2rem;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="sheet-header">
+      <span>EMC Savings Tracker</span>
+      <a href="./EMC_Savings_Tracker.csv">Download CSV</a>
+    </div>
+
+    <div class="table-wrap">
+      <table id="trackerTable" aria-label="EMC Savings Tracker Table"></table>
+    </div>
+
+    <div class="note">This page displays the tracker in browser view. Use Download CSV for spreadsheet editing.</div>
+  </div>
+
+  <script>
+    function parseCsvLine(line) {
+      return line.split(",");
+    }
+
+    function buildTable(lines) {
+      const table = document.getElementById("trackerTable");
+      if (!lines.length) {
+        table.innerHTML = "<tr><td>No data available.</td></tr>";
+        return;
+      }
+
+      const headerCells = parseCsvLine(lines[0]);
+      const thead = document.createElement("thead");
+      const headerRow = document.createElement("tr");
+      headerCells.forEach((cell) => {
+        const th = document.createElement("th");
+        th.textContent = cell;
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+
+      const tbody = document.createElement("tbody");
+      lines.slice(1).forEach((line) => {
+        if (!line.trim()) {
+          return;
+        }
+        const row = document.createElement("tr");
+        parseCsvLine(line).forEach((cell) => {
+          const td = document.createElement("td");
+          td.textContent = cell;
+          row.appendChild(td);
+        });
+        tbody.appendChild(row);
+      });
+
+      table.innerHTML = "";
+      table.appendChild(thead);
+      table.appendChild(tbody);
+    }
+
+    fetch("./EMC_Savings_Tracker.csv")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load tracker CSV");
+        }
+        return response.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "");
+        const lines = cleanText.split(/\r?\n/).filter((line) => line.length > 0);
+        buildTable(lines);
+      })
+      .catch(() => {
+        const table = document.getElementById("trackerTable");
+        table.innerHTML = "<tr><td>Could not load tracker file.</td></tr>";
+      });
+  </script>
+</body>
+</html>
