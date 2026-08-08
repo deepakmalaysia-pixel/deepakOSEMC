@@ -8,6 +8,7 @@
 - Tender Type: Limited Competitive Bid
 - Issue Date:
 - Submission Deadline:
+- Reference Document: [Request for Proposal (Bid Document) for Splendor Complex](../Request%20for%20Proposal%20(Bid%20Document)%20for%20Splendor%20Complex.pdf)
 
 ## 2. Scope of Work
 - Conduct detailed energy audit for common and critical electrical loads.
