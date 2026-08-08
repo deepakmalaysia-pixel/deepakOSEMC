@@ -23,8 +23,12 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p _site
-          cp index.html styles.css script.js _site/
-          cp -R docs maps sheets templates _site/
+          # Publish all user-facing site files, including root-level PDFs and docs.
+          rsync -av --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '_site/' \
+            ./ _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿# Publishing SOP (Beginner Friendly)
-=======
 # Publishing SOP (Beginner Friendly)
->>>>>>> 7bf7e7da90b6916cb4095ca675de4f3bae251758
 
 Use this checklist every time you update the website.
 
@@ -75,8 +71,4 @@ If Push says you must pull first:
 
 ## H. Standard Publish Flow (Short Form)
 
-<<<<<<< HEAD
 Edit -> Commit -> Push -> Actions Success -> Refresh Live Site
-=======
-Edit -> Commit -> Push -> Actions Success -> Refresh Live Site
->>>>>>> 7bf7e7da90b6916cb4095ca675de4f3bae251758
